@@ -152,17 +152,17 @@ console.log(message('Allie'));
 //   this.hometown = hometown;
 // };
 
-let Student = (name, age, hometown) => {
+let Student = function(name, age, hometown) {
   this.name = name;
   this.age = age;
   this.hometown = hometown;
-}
+};
 
-// let joe = Student('Joe', 'Schmoe', 100);
+let joe = new Student('Joe', 'Schmoe', 100);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
-console.log(Student('Joe', 'Schmoe', 100));
+console.log(joe);
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
@@ -185,7 +185,7 @@ Student.courseName = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(Student.courseName());
+console.log(Student.courseName());
 
 
 
@@ -196,12 +196,12 @@ Student.prototype.scope = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scope());
+console.log(joe.scope());
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scopeArrow());
+console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
