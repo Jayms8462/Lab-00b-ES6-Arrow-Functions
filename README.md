@@ -1,0 +1,1 @@
+# Lab-00b-ES6-Arrow-Functions
