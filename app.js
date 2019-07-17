@@ -210,3 +210,4 @@ console.log(joe.scopeArrow());
 // This is a different rendition of student than in questions 1, this is its own version of the student object
 // 3. Explain why "this" is different when an arrow function is used.
 // Because the arrow function acts like an ananomys function where it is independant from other objects that are already created.
+//Trash Comment
