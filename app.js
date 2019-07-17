@@ -205,8 +205,8 @@ console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+// This is the current rendition of the student object.
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+// This is a different rendition of student than in questions 1, this is its own version of the student object
 // 3. Explain why "this" is different when an arrow function is used.
-//
+// Because the arrow function acts like an ananomys function where it is independant from other objects that are already created.
